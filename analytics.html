@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f5">
+    <meta name="description" content="Explore illustrative Northstar productivity and time-saved analytics.">
+    <title>Analytics — Northstar</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="shell">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Northstar home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5 11.7 8.3 17.5 10 11.7 11.7 10 17.5 8.3 11.7 2.5 10 8.3 8.3Z" fill="#243322"/></svg></span>northstar</a>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="managesales.html">Manage Records</a>
+          <a href="analytics.html" aria-current="page">Analytics</a>
+        </div>
+        <div class="nav-actions">
+          <a class="button" href="index.html#get-started">Get early access <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main shell">
+      <section class="page-intro">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Illustrative productivity insights</div>
+        <h1>Make time for what matters.</h1>
+        <p>Explore sample views of how a productivity workspace might help teams reclaim time and reduce repetitive work.</p>
+      </section>
+
+      <div class="analytics-grid">
+        <section class="panel" aria-labelledby="hours-heading">
+          <h2 id="hours-heading">Hours returned to teams</h2>
+          <p>Illustrative hours returned each month through workflow improvements.</p>
+          <div class="chart-container"><canvas id="hours-chart" role="img" aria-label="Bar chart showing illustrative hours returned rising from 38 in May to 124 in October">Sample hours returned: May 38, June 54, July 49, August 76, September 98, October 124.</canvas></div>
+        </section>
+        <section class="panel" aria-labelledby="categories-heading">
+          <h2 id="categories-heading">Where time is saved</h2>
+          <p>Illustrative share of productivity improvements by task.</p>
+          <div class="chart-container compact"><canvas id="categories-chart" role="img" aria-label="Doughnut chart showing sample improvements: meeting notes 36 percent, knowledge search 28 percent, weekly reporting 22 percent, and follow-ups 14 percent">Sample task share: meeting notes 36%, knowledge search 28%, weekly reporting 22%, follow-ups 14%.</canvas></div>
+        </section>
+      </div>
+      <p class="analytics-note">All values on this page are fictional sample data for a student website demonstration. They do not represent measurements from real Northstar customers or the records in the CRUD demo.</p>
+      <p id="analytics-status" class="chart-fallback" role="status" aria-live="polite" hidden></p>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <a class="brand" href="index.html" aria-label="Northstar home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5 11.7 8.3 17.5 10 11.7 11.7 10 17.5 8.3 11.7 2.5 10 8.3 8.3Z" fill="#243322"/></svg></span>northstar</a>
+        <span class="copyright">© 2025 Northstar Labs. Made for work that matters.</span>
+        <div class="footer-links"><a href="aboutus.html">About Us</a><a href="managesales.html">Manage Records</a></div>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script src="analytics.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f5">
+    <meta name="description" content="Meet Northstar and learn how this student-built website was made.">
+    <title>About Us — Northstar</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="shell">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Northstar home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5 11.7 8.3 17.5 10 11.7 11.7 10 17.5 8.3 11.7 2.5 10 8.3 8.3Z" fill="#243322"/></svg></span>northstar</a>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="aboutus.html" aria-current="page">About Us</a>
+          <a href="managesales.html">Manage Records</a>
+          <a href="analytics.html">Analytics</a>
+        </div>
+        <div class="nav-actions">
+          <a class="button" href="index.html#get-started">Get early access <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main shell">
+      <section class="page-intro">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> The people and thinking behind Northstar</div>
+        <h1>More room for people to do their best work.</h1>
+        <p>Northstar is a tech startup productivity tools company focused on helping teams spend less time coordinating work and more time making meaningful progress.</p>
+      </section>
+
+      <div class="profile-grid">
+        <section class="panel">
+          <h2>Professional profile</h2>
+          <p>Mariam Abouzied has intermediate experience coding and building websites utilizing AI tools and resources along the way. That experience informs the product theme presented throughout this site: useful technology should make complex work feel clearer and more manageable.</p>          <div class="profile-links">
+            <a href="https://github.com/mariam-abouzied/" target="_blank" rel="noopener noreferrer">Student developer GitHub profile ↗</a>
+          </div>
+        </section>
+        <section class="panel">
+          <h2>About this website</h2>
+          <p>This multi-page website was constructed as a student development project around a tech startup called Northstar, a productivity-workspace. I designed a consistent navigation and visual style, then built separate pages for the product overview, company and project profile, workspace-record management, and sample-data analytics.</p>          <div class="callout">This is a front-end demonstration, not a connected Northstar product or production service. The records and analytics use illustrative sample data.</div>
+        </section>
+        <section class="panel">
+          <h2>How it was built</h2>
+          <p>Each page is written with semantic HTML and styled using responsive CSS. JavaScript powers the mobile navigation and CRUD form; browser local storage keeps demo records between visits. Chart.js renders the analytics visualizations.</p>
+          <ul class="tech-list" aria-label="Technologies used">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Chart.js</li><li>Browser localStorage</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>What I learned</h2>
+          <p>Building the project brings together page structure, responsive layouts, accessible navigation and form feedback, safe DOM rendering, persistent browser data, and data visualization. Separating the CRUD and analytics behavior into dedicated scripts also keeps each feature easier to maintain.</p>
+          <p>Explore the <a href="managesales.html"><strong>workspace records</strong></a> or view the <a href="analytics.html"><strong>sample analytics</strong></a>.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <a class="brand" href="index.html" aria-label="Northstar home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5 11.7 8.3 17.5 10 11.7 11.7 10 17.5 8.3 11.7 2.5 10 8.3 8.3Z" fill="#243322"/></svg></span>northstar</a>
+        <span class="copyright">© 2025 Northstar Labs. Made for work that matters.</span>
+        <div class="footer-links"><a href="index.html#get-started">Get in touch</a><a href="https://github.com/mariam-abouzied/" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>
